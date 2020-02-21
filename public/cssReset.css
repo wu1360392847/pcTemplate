@@ -16,7 +16,7 @@ textarea {resize:vertical;}
 /** 公共样式*/
 .left {float:left;}
 .right {float:right;}
-.hide {display:none;}
+.show {display:none;}
 .block {display:block;}
 .inline {display:inline;}
 .inlineblock {display:inline-block;}

@@ -1,14 +1,14 @@
 <template>
   <div class="home">
-    Home
+    <img alt="Vue logo" src="../assets/img/logo.png" />
     <br />
     <br />
     vueX 数据测试
     {{this.$store.state.ceshi}}
     <br />
     <br />--组件测试--
+    <br />
     <HelloWorld msg="Welcome to Your Vue.js App" />
-    <HelloWorld1 msg="Welcome to Your Vue.js App" />
     <div class="clearfloat">
       <div class="right">456</div>
       <div class="left">789</div>
@@ -18,22 +18,22 @@
 </template>
 
 <script>
+// @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-import HelloWorld1 from '@/components/HelloWorld1.vue'
+
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
-    HelloWorld,
-    HelloWorld1
+    HelloWorld
   },
   created () {
     // 请求测试
-    this.$http.getCategories().then(res => {
+    this.$http.getSecurityCode().then(res => {
+      console.log(res)
+    })
+    this.$http.getSecurityCode2().then(res => {
       console.log(res)
     })
   }
 }
 </script>
-
-<style scoped lang="scss">
-</style>

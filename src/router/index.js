@@ -6,9 +6,7 @@ import store from '../store/index'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  // # 模式需要后端支持
-  // mode: 'history',
-  routes: routes
+  routes
 }
 )
 

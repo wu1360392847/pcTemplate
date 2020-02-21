@@ -4,7 +4,6 @@
 
 const Home = () => import('@/views/Home.vue')
 const About = () => import('@/views/About.vue')
-const Login = () => import('@/views/About.vue')
 
 export default [
   {
@@ -37,18 +36,6 @@ export default [
     meta: {
       isNav: true,
       title: 'About',
-      isAuthRequired: false
-    }
-  },
-  {
-    path: '/login',
-    name: 'login',
-    components: {
-      mainWindow: Login
-    },
-    meta: {
-      isNav: true,
-      title: 'Login',
       isAuthRequired: false
     }
   }
