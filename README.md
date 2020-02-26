@@ -1,4 +1,4 @@
-# pcItme
+# itme
 
 ## Project setup
 ```

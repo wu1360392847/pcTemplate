@@ -8,12 +8,16 @@
   </div>
 </template>
 
-<style lang="less">
+<style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', '宋体', Tahoma;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  // 样式重置
+  color: $font-color-dark;
+  font-size: $font-small;
+  background: $bg-color-dark;
 }
 
 #nav {
@@ -21,7 +25,7 @@
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: $font-color-dark;
 
     &.router-link-exact-active {
       color: #42b983;
