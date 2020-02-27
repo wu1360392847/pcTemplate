@@ -15,9 +15,9 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   // 样式重置
-  color: $font-color-dark;
-  font-size: $font-small;
-  background: $bg-color-dark;
+  color: $font-color-small;
+  font-size: $font-size-small;
+  background: $bg-color-small;
 }
 
 #nav {
@@ -25,7 +25,7 @@
 
   a {
     font-weight: bold;
-    color: $font-color-dark;
+    color: $font-color-small;
 
     &.router-link-exact-active {
       color: #42b983;
